@@ -1,0 +1,24 @@
+{
+  "name": "bayrecorder",
+  "version": "1.0.0",
+  "description": "bayRecorder is a server-less (entire client-side) JavaScript library that can be used to record audio media streams. It supports cross-browser audio recording",
+  "main": "bayRecorder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantoshTirukkovilour/bayRecorder.git"
+  },
+  "keywords": [
+    "angular",
+    "audio",
+    "recorder"
+  ],
+  "author": "Santosh Tirukkovilour",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SantoshTirukkovilour/bayRecorder/issues"
+  },
+  "homepage": "https://github.com/SantoshTirukkovilour/bayRecorder#readme"
+}
