@@ -1,6 +1,6 @@
 {
   "name": "bayrecorder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "bayRecorder is a server-less (entire client-side) JavaScript library that can be used to record audio media streams. It supports cross-browser audio recording",
   "main": "bayRecorder.js",
   "scripts": {

@@ -116,7 +116,17 @@ function bayAudioRecorder(stream, config) {
             callback();
     }
 
-    this.stopRecording = function(callback) {
+    this.stopRecBlob = function(callback) {
+        mediaRecorder.stop();
+        if(meter)
+            meter.shutdown();
+
+        var base64data;
+        var blob = new Blob(chunks, {type: "audio/wav"});
+        callback(blob);
+    };
+	
+	this.stopRecBase64 = function(callback) {
         mediaRecorder.stop();
         if(meter)
             meter.shutdown();
@@ -127,8 +137,7 @@ function bayAudioRecorder(stream, config) {
         reader.readAsDataURL(blob);
         reader.onloadend = function() {
             base64data = reader.result;
-            // callback(base64data.split(',')[1]);
-            callback(blob);
+            callback(base64data.split(',')[1]);
         }
     };
 
