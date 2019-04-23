@@ -8,7 +8,7 @@
 function bayRecorder(mediaStream, config) {
 }
 
-bayRecorder.version = '1.0.0';
+bayRecorder.version = '1.0.2';
 
 if (typeof module !== 'undefined' /* && !!module.exports*/ ) {
     module.exports = bayRecorder;
